@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rafael Suarez">
+  <rect width="64" height="64" rx="7" fill="#101418"/>
+  <path d="M42 0h12L30 64H18z" fill="#00a98f"/>
+  <path d="M40 0h5L21 64h-5z" fill="#c6ff4a"/>
+  <text x="11" y="41" fill="#fff" font-family="Arial,sans-serif" font-size="26" font-weight="700">RS</text>
+</svg>

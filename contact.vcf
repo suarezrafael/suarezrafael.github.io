@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Suarez;Rafael;;;
+FN:Rafael Suarez
+ORG:RVS Tecnologia LTDA
+TITLE:Desenvolvedor de software
+EMAIL;TYPE=INTERNET,WORK:rafaelv_s@hotmail.com
+URL:https://suarezrafael.github.io/
+URL;TYPE=WORK:https://suarezrafael.github.io/rvs-tecnologia/
+END:VCARD
