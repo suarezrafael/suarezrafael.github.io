@@ -22,4 +22,4 @@ py -m venv .venv
 .\.venv\Scripts\python.exe scripts\generate_print.py
 ```
 
-O telefone foi omitido porque o numero visivel e o link telefonico do site da RVS nao coincidem. Confirme o numero antes de inclui-lo no cartao digital, no vCard ou na arte impressa.
+Telefone confirmado pelo titular: **+55 (51) 99123-1245**. O numero deve permanecer igual no site, no vCard e na arte impressa.
