@@ -1,16 +1,8 @@
 @font-face {
-  font-family: Fraunces;
-  src: url("fonts/Fraunces-Semibold.woff2") format("woff2");
+  font-family: Jost;
+  src: url("fonts/Jost-Light.woff2") format("woff2");
   font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Fraunces;
-  src: url("fonts/Fraunces-SemiboldItalic.woff2") format("woff2");
-  font-style: italic;
-  font-weight: 600;
+  font-weight: 300;
   font-display: swap;
 }
 
@@ -84,8 +76,7 @@ a:focus-visible { outline: 3px solid var(--teal); outline-offset: 5px; }
 }
 .eyebrow span { padding: 0 7px; color: var(--coral); }
 
-h1 { margin: 0; font: 600 clamp(3rem, 7vw, 6.5rem)/1.04 Fraunces, Georgia, serif; }
-h1 em, .card-profile h2 em { font-style: italic; }
+h1 { margin: 0; font: 300 clamp(3.05rem, 7vw, 6.5rem)/1.05 Jost, Arial, sans-serif; }
 .dot { color: var(--teal); }
 .intro-copy { max-width: 640px; margin: 20px 0 0; color: #3f4d55; font-size: clamp(1.05rem, 1.8vw, 1.28rem); }
 .intro-copy a { text-decoration-color: var(--teal); text-underline-offset: 4px; }
@@ -119,7 +110,7 @@ h1 em, .card-profile h2 em { font-style: italic; }
 .card-index { color: var(--lime); white-space: nowrap; }
 .card-profile { margin-top: auto; padding-top: 35px; }
 .card-profile p { margin: 0 0 3px; color: var(--lime); font-size: 0.83rem; font-weight: 700; }
-.card-profile h2 { margin: 0 0 12px; font: 600 clamp(2.7rem, 5vw, 4.25rem)/0.98 Fraunces, Georgia, serif; }
+.card-profile h2 { margin: 0 0 12px; font: 300 clamp(3rem, 5.8vw, 4.5rem)/0.96 Jost, Arial, sans-serif; }
 .card-location { color: #b9c7c4; }
 .card-rule { height: 2px; width: 58px; margin: 26px 0 18px; background: var(--coral); }
 .card-contact { display: flex; flex-wrap: wrap; gap: 11px 28px; }

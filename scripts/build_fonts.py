@@ -9,8 +9,7 @@ from fontTools.varLib.instancer import instantiateVariableFont
 ROOT = Path(__file__).resolve().parents[1]
 FONTS = ROOT / "fonts"
 INSTANCES = (
-    ("Fraunces-variable.ttf", "Fraunces-Semibold", {"opsz": 48, "wght": 600, "SOFT": 20, "WONK": 0}),
-    ("Fraunces-Italic-variable.ttf", "Fraunces-SemiboldItalic", {"opsz": 48, "wght": 600, "SOFT": 20, "WONK": 0}),
+    ("Jost-variable.ttf", "Jost-Light", {"wght": 300}),
     ("Manrope-variable.ttf", "Manrope-Regular", {"wght": 400}),
     ("Manrope-variable.ttf", "Manrope-Bold", {"wght": 700}),
 )
@@ -19,6 +18,7 @@ INSTANCES = (
 def main():
     for source, name, axes in INSTANCES:
         font = instantiateVariableFont(TTFont(FONTS / "source" / source), axes, inplace=False)
+        font.recalcTimestamp = False
         font.save(FONTS / f"{name}.ttf")
         font.flavor = "woff2"
         font.save(FONTS / f"{name}.woff2")

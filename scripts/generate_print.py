@@ -68,18 +68,17 @@ def front(pdf, _qr):
     rect(pdf, 85, 0, 1, 17, LIME)
     rect(pdf, 7, 18, 53, 0.25, HexColor("#3c4749"))
 
-    label(pdf, 7, 30, "Rafael", "Fraunces-Semibold", 26, PAPER)
-    label(pdf, 7, 41, "Suarez", "Fraunces-SemiboldItalic", 26, PAPER)
-    surname_width = pdfmetrics.stringWidth("Suarez", "Fraunces-SemiboldItalic", 26) / mm
-    rect(pdf, 8 + surname_width, 38.5, 1.6, 1.6, CORAL)
-    label(pdf, 7, 48, "DESENVOLVIMENTO DE SOFTWARE  /  VENÂNCIO AIRES - RS", "Manrope-Bold", 6.4, SOFT)
+    label(pdf, 7, 32, "Rafael Suarez", "Jost-Light", 28, PAPER)
+    rect(pdf, 7, 36, 12, 0.8, CORAL)
+    label(pdf, 7, 43, "DESENVOLVIMENTO DE SOFTWARE", "Manrope-Bold", 6.8, PAPER)
+    label(pdf, 7, 49, "VENÂNCIO AIRES - RS", "Manrope-Regular", 6.4, SOFT)
 
 
 def back(pdf, qr):
     rect(pdf, 0, 0, 96, 56, PAPER)
     rect(pdf, 0, 0, 3, 56, TEAL)
     rect(pdf, 3, 0, 0.8, 56, LIME)
-    label(pdf, 7, 13, "Vamos conversar.", "Fraunces-SemiboldItalic", 18, INK)
+    label(pdf, 7, 13, "Vamos conversar.", "Jost-Light", 19, INK)
     rect(pdf, 7, 17, 11, 0.8, CORAL)
     label(pdf, 7, 23, "+55 (51) 99123-1245", "Manrope-Bold", 9.2, INK)
     label(pdf, 7, 29, "rafaelv_s@hotmail.com", "Manrope-Regular", 8.1, INK)
@@ -103,7 +102,7 @@ def write_pdf(path, pages, qr):
 
 
 def main():
-    for name in ("Fraunces-Semibold", "Fraunces-SemiboldItalic", "Manrope-Regular", "Manrope-Bold"):
+    for name in ("Jost-Light", "Manrope-Regular", "Manrope-Bold"):
         pdfmetrics.registerFont(TTFont(name, str(ROOT / "fonts" / f"{name}.ttf")))
 
     qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=10, border=4)
